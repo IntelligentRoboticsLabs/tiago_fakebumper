@@ -28,7 +28,7 @@ def generate_launch_description():
                     get_package_share_directory('tiago_simulator'),
                     'launch/'), 'simulation.launch.py']),)
     
-    fakebump_cmd = Node(package='tiago',
+    fakebump_cmd = Node(package='tiago_fakebumper',
                         executable='fake_bumper',
                         output='screen',
                         parameters=[{
